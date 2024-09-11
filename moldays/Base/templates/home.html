@@ -1,0 +1,162 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    </head>
+    <body>
+        <!--navbar section-->
+        <nav id="navbar" class="flex s-around bg-color">
+            <div class="left-nav">
+                <h2 class="t-white">Portfolio</h2>
+            </div>
+            <div class="right-nav">
+                <li><a href ="#home" class="t-white roboto">Home<i class="fa-solid fa-house"></i></a></li>
+                <li><a href ="#about" class="t-white roboto">About me<i class="fa-solid fa-user"></i></a></li>
+                <li><a href ="#skills" class="t-white roboto">Skills<i class="fa-solid fa-code"></i></a></li>
+                <li><a href ="#projects" class="t-white roboto">Projects<i class="fa-solid fa-project-diagram"></i></a></li>
+                <li><a href ="#contact" class="t-white roboto">Contact<i class="fa-solid fa-rocket"></i></a></li>
+            </div>
+        </nav>
+        <!---home section-->
+        <section id="home" class="flex s-around sw-80 m-auto">
+            <div class="home-left flex items-center">
+                <div class="home-content">
+                    <h6 class="popinss">Hi ,I'm</h6>
+                    <h1 class="t-white">Molday Fidel</h1>
+                    <h4 class="popinss">Software Engineer</h4>
+                    <a href="{%static 'pdf/django.pdf'%}"target="_blank">
+                        <button class="btn popinss">Resume</button>
+                    </a>
+                    <a class="btn live popinss" id="hireme" href=""
+                    target="_blank">let's talk</a>
+                </div>
+            </div>
+            <div class="home-right flex s-center items-center">
+                <div class="circle flex s-center items-center" id="mainImage">
+                    <img src="{%static 'images/mol.jpg'%}" alt="">
+                </div>
+            </div>
+        </section>
+        <!--about section-->
+        <section id="about">
+            <h1 class="t-center my-2 t-white f-2">About<menu></menu></h1>
+            <div class="about-container flex s-around">
+                <div class="about-left flex s-center items-center" id="mainImage">
+                    <img src="{%static 'image/dog.png'%}" alt="">
+                </div>
+            </div>
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white n-b-1 popinss">Fidel Ouma</h1>
+                    <p class="t-white popinss">I'm a dedicated software engineer with expertise in building scalable, efficient systems using technologies like [insert relevant technologies]. I thrive in collaborative environments, solving complex problems, and delivering clean, user-focused solutions. Passionate about continuous learning and innovative tech, I enjoy contributing to impactful projects.</p>
+                    <a href="btn" id="hireme" href="">Hire me</a>
+                </div>
+            </div>
+        </section>
+        
+        <!--skills section-->
+        <section id="Skills">
+            <h1 class="t-center my-2 t-white f-2">Skills</h1>
+            <div class="services-container flex s-around h-50">
+                <div class="Skills-left flex s-center items-center">
+                    <img src="{static 'images/'}" alt="Skills image">
+                </div>
+                <div class="skills-right flex s-center items-center">
+                    <div class="java bar p-relative"><span class="bar-content left t-white">Core Java</span>
+                    <span class="bar-content right-skills t-white">50%</span></div>
+
+                    <div class="html bar p-relative"><span class="bar-content left t-white">Html</span>
+                        <span class="bar-content right-skills t-white">90%</span></div>
+
+                        <div class="css bar p-relative"><span class="bar-content left t-white">CSS</span>
+                            <span class="bar-content right-skills t-white">85%</span></div>
+
+                            <div class="js bar p-relative"><span class="bar-content left t-white">JavaScript</span>
+                            <span class="bar-content right-skills t-white">60%</span></div>
+
+                            <div class="sql bar p-relative"><span class="bar-content left t-white">MYSQL</span>
+                            <span class="bar-content right-skills t-white">50%</span></div>        
+                </div>
+            </div>
+        </section>
+        <!--project section-->
+        <section id="project">
+            <h1 class="t-center my-2 t-white f-2">Project</h1>
+            <div class="project-container flex s-center">
+                <div class="project-item flex f-col s-center items-center">
+                    <h1 class="t-white popinss">Amazone clone</h1>
+                    <p class="t-white popinss"></p>
+                    <div class="button flex s-around">
+                        <a href="" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                    </div>
+              
+
+                    <div class="project-item flex f-col s-center items-center">
+                        <h1 class="t-white popinss">Amazone clone</h1>
+                        <p class="t-white popinss"></p>
+                        <div class="button flex s-around">
+                            <a href="" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--contact me section-->
+        <section id="contact" class="m-b-1">
+          <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+          <div class="contact-container flex s-around items-center">
+            <div class="form" id="contactform">
+                <form method="post">
+                    <div class="name form-div">
+                        <input type="text" class="popinss" id="name" name="name" placeholder="Enter your Name">
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email" class="popinss" id="email" name="email" placeholder="Enter your Email" required>
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="phone" class="popinss" id="" name="number" placeholder="Enter your Phone" required>
+                    </div>
+
+                    <div class="textarea form-div">
+                        <textarea class="popinss" id="textarea" name="content" rows="10" cols="30" placeholder="Enter your message"></textarea>
+
+                    </div>
+                    <button type="submit" class="btn popinss" id="submit">send</button>
+                </form>
+            </div>
+          </div>
+        </section>
+
+        <!--footer section-->
+        <footer id="footer">
+           <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="popinss">Home</a></li>
+            <li><a href="#about" class="popinss">About Me</a></li>
+            <li><a href="#skills" class="popinss">Skills</a></li>
+            <li><a href="#project" class="popinss">Project</a></li>
+            <li><a href="#portfolio" class="Portfolio">Home</a></li>
+           </ul> 
+           <ul class="flex s-center w-80 font-awesome">
+             <a href="" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+             </a>
+
+             <a href="" target="_blank">
+                <li><i class="fa-brands fa-github-in"></i></li>
+             </a>
+
+             <a href="" target="_blank">
+                <li><i class="fa-brands fa-instagram-in"></i></li>
+             </a>
+           </ul>
+           <p class="t-center my-2 popinss">copy; All Right Reserved.<span class="cpy-white popinss">Error By Night</span></p>
+        </footer>
+    </body>
+</html>
